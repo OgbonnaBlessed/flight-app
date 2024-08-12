@@ -158,52 +158,52 @@ const Content = () => {
                 <FaAngleLeft id="prev_slide" className="slide_button back" onClick={initSlider} />
             <div className="stay-inner-container">
                 <div className="stay-container">
-                    <img src="../../images/stay/pet friendly.jpeg" alt="" />
+                    <img src={`${process.env.PUBLIC_URL}/images/stay/pet friendly.jpeg`} alt="" />
                     <h3>Pet friendly</h3>
                 </div>
                 <div className="stay-container">
-                    <img src="../../images/stay/chalet.jpeg" alt="" />
-                    <h3>Chalet</h3>
+                    <img src={`${process.env.PUBLIC_URL}/images/stay/chalet.jpeg`} alt="" />
+                 <h3>Chalet</h3>
                 </div>
                 <div className="stay-container">
-                    <img src="../../images/stay/resort.jpeg" alt="" />
-                    <h3>Resort</h3>
+                    <img src={`${process.env.PUBLIC_URL}/images/stay/resort.jpeg`} alt="" />
+                 <h3>Resort</h3>
                 </div>
                 <div className="stay-container">
-                    <img src="../../images/stay/cabin.jpeg" alt="" />
-                    <h3>Cabin</h3>
+                    <img src={`${process.env.PUBLIC_URL}/images/stay/cabin.jpeg`} alt="" />
+                <h3>Cabin</h3>
                 </div>
                 <div className="stay-container">
-                    <img src="../../images/stay/spa.jpeg" alt="" />
-                    <h3>Spa</h3>
+                    <img src={`${process.env.PUBLIC_URL}/images/stay/spa.jpeg`} alt="" />
+                  <h3>Spa</h3>
                 </div>
                 <div className="stay-container">
-                    <img src="../../images/stay/hottub.jpeg" alt="" />
-                    <h3>Hot tub</h3>
+                    <img src={`${process.env.PUBLIC_URL}/images/stay/hottub.jpeg`} alt="" />
+                 <h3>Hot tub</h3>
                 </div>
                 <div className="stay-container">
-                    <img src="../../images/stay/ocean view.jpg" alt="" />
+                    <img src={`${process.env.PUBLIC_URL}/images/stay/ocean view.jpeg`} alt="" />                  
                     <h3>Ocean view</h3>
                 </div>
                 <div className="stay-container">
-                    <img src="../../images/stay/pool.jpg" alt="" />
-                    <h3>Pool</h3>
+                    <img src={`${process.env.PUBLIC_URL}/images/stay/pool.jpeg`} alt="" />
+                  <h3>Pool</h3>
                 </div>
                 <div className="stay-container">
-                    <img src="../../images/stay/castle.jpeg" alt="" />
-                    <h3>Castle</h3>
+                    <img src={`${process.env.PUBLIC_URL}/images/stay/castle.jpeg`} alt="" />
+                 <h3>Castle</h3>
                 </div>
                 <div className="stay-container">
-                    <img src="../../images/stay/water park.jpg" alt="" />
+                    <img src={`${process.env.PUBLIC_URL}/images/stay/water park.jpeg`} alt="" />                    
                     <h3>Water park</h3>
                 </div>
                 <div className="stay-container">
-                    <img src="../../images/stay/House boat.jpg" alt="" />
+                    <img src={`${process.env.PUBLIC_URL}/images/stay/House boat.jpeg`} alt="" />                    
                     <h3>House boat</h3>
                 </div>
                 <div className="stay-container">
-                    <img src="../../images/stay/villa.jpeg" alt="" />
-                    <h3>Villa</h3>
+                    <img src={`${process.env.PUBLIC_URL}/images/stay/villa.jpeg`} alt="" />
+                <h3>Villa</h3>
                 </div>
             </div>
                 <FaAngleRight id="next_slide" className="slide_button next" onClick={initSlider} />
@@ -214,56 +214,56 @@ const Content = () => {
             <FaAngleLeft id="before_slide" className="change_button before" onClick={secondSlide} />
             <div className="destination-inner-container">
                 <div className="destination-container">
-                    <img src="../../images/destination/Lagos.jpeg" alt="" />
+                    <img src={`${process.env.PUBLIC_URL}/images/destination/Lagos.jpeg`} alt="" />
                     <div className="text">
                         <h3>Lagos</h3>
                         <p>Lagos, Nigeria</p>
                     </div>
                 </div>
                 <div className="destination-container">
-                    <img src="../../images/destination/Las vegas.jpeg" alt="" />
+                    <img src={`${process.env.PUBLIC_URL}/images/destination/Las vegas.jpeg`} alt="" />
                     <div className="text">
                         <h3>Las vegas</h3>
                         <p>Nevada, United States of America</p>
                     </div>
                 </div>
                 <div className="destination-container">
-                    <img src="../../images/destination/Lome.jpeg" alt="" />
+                    <img src={`${process.env.PUBLIC_URL}/images/destination/Lome.jpeg`} alt="" />
                     <div className="text">
                         <h3>Lome</h3>
                         <p>Maritime Region, Togo</p>
                     </div>
                 </div>
                 <div className="destination-container">
-                    <img src="../../images/destination/port harcourt.jpeg" alt="" />
+                    <img src={`${process.env.PUBLIC_URL}/images/destination/port harcourt.jpeg`} alt="" />
                     <div className="text">
                         <h3>Port Harcourt</h3>
                         <p>Rivers, Nigeria</p>
                     </div>
                 </div>
                 <div className="destination-container">
-                    <img src="../../images/destination/portland.jpeg" alt="" />
+                    <img src={`${process.env.PUBLIC_URL}/images/destination/portland.jpeg`} alt="" />
                     <div className="text">
                         <h3>PortLand</h3>
                         <p>Oregon, United States of America</p>
                     </div>
                 </div>
                 <div className="destination-container">
-                    <img src="../../images/destination/new york.jpeg" alt="" />
+                    <img src={`${process.env.PUBLIC_URL}/images/destination/new york.jpeg`} alt="" />
                     <div className="text">
                         <h3>New York</h3>
                         <p>United States of America</p>
                     </div>
                 </div>
                 <div className="destination-container">
-                    <img src="../../images/destination/niagara falls.jpeg" alt="" />
+                    <img src={`${process.env.PUBLIC_URL}/images/destination/niagara falls.jpeg`} alt="" />
                     <div className="text">
                         <h3>Niagara Falls</h3>
                         <p>Ontario, Canada</p>
                     </div>
                 </div>
                 <div className="destination-container">
-                    <img src="../../images/destination/california.jpeg" alt="" />
+                    <img src={`${process.env.PUBLIC_URL}/images/destination/california.jpeg`} alt="" />
                     <div className="text">
                         <h3>California</h3>
                         <p>California, United States of America</p>
@@ -281,9 +281,9 @@ const Content = () => {
                 <div className="explore-container">
                         <FaAngleLeft className="angle angle-left before-icon" onClick={insideSlider}/>
                     <div className="img-box">
-                        <img src="../../images/Explore/First hotel/view1.jpeg" alt="" />
-                        <img src="../../images/Explore/First hotel/view2.jpeg" alt="" />
-                        <img src="../../images/Explore/First hotel/view3.jpeg" alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/First hotel/view1.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/First hotel/view2.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/First hotel/view3.jpeg`} alt="" />
                     </div>
                         <FaAngleRight className="angle angle-right after-icon" onClick={insideSlider} />
                     <p className="review"><b>9.8/10</b> Exceptional (101 reviews)</p>
@@ -293,13 +293,13 @@ const Content = () => {
                 </div>
 
                 <div className="explore-container">
-                        <FaAngleLeft className="angle angle-left before-icon"/>
+                        <FaAngleLeft className="angle angle-left before-icon" onClick={insideSlider}/>
                     <div className="img-box">
-                        <img src="../../images/Explore/second hotel/view1.jpeg" alt="" />
-                        <img src="../../images/Explore/second hotel/view2.jpeg" alt="" />
-                        <img src="../../images/Explore/second hotel/view3.jpeg" alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/second hotel/view1.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/second hotel/view2.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/second hotel/view3.jpeg`} alt="" />
                     </div>
-                        <FaAngleRight className="angle angle-right after-icon" />
+                        <FaAngleRight className="angle angle-right after-icon" onClick={insideSlider} />
                     <p className="review"><b>9.2/10</b> Exceptional (3 reviews)</p>
                     <p className="name">Naturluxe & Stars</p>
                     <p className="location">Watkins Glen</p>
@@ -308,9 +308,9 @@ const Content = () => {
                 <div className="explore-container">
                         <FaAngleLeft className="angle angle-left before-icon"/>
                     <div className="img-box">
-                        <img src="../../images/Explore/Third hotel/view1.jpeg" alt="" />
-                        <img src="../../images/Explore/Third hotel/view2.jpeg" alt="" />
-                        <img src="../../images/Explore/Third hotel/view3.jpeg" alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/Third hotel/view1.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/Third hotel/view2.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/Third hotel/view3.jpeg`} alt="" />
                     </div>
                         <FaAngleRight className="angle angle-right after-icon" />
                     <p className="review"><b>9.4/10</b> Exceptional (8 reviews)</p>
@@ -321,9 +321,9 @@ const Content = () => {
                 <div className="explore-container">
                         <FaAngleLeft className="angle angle-left before-icon"/>
                     <div className="img-box">
-                        <img src="../../images/Explore/Fourth hotel/view1.jpeg" alt="" />
-                        <img src="../../images/Explore/Fourth hotel/view2.jpeg" alt="" />
-                        <img src="../../images/Explore/Fourth hotel/view3.jpeg" alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/Fourth hotel/view1.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/Fourth hotel/view2.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/Fourth hotel/view3.jpeg`} alt="" />
                     </div>
                         <FaAngleRight className="angle angle-right after-icon" />
                     <p className="review"><b>9.7/10</b> Exceptional (47 reviews)</p>
@@ -334,9 +334,9 @@ const Content = () => {
                 <div className="explore-container">
                         <FaAngleLeft className="angle angle-left before-icon"/>
                     <div className="img-box">
-                        <img src="../../images/Explore/Fifth hotel/view1.jpeg" alt="" />
-                        <img src="../../images/Explore/Fifth hotel/view2.jpeg" alt="" />
-                        <img src="../../images/Explore/Fifth hotel/view3.jpeg" alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/Fifth hotel/view1.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/Fifth hotel/view2.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/Fifth hotel/view3.jpeg`} alt="" />
                     </div>
                         <FaAngleRight className="angle angle-right after-icon" />
                     <p className="review"><b>9.5/10</b> Exceptional (17 reviews)</p>
@@ -347,9 +347,9 @@ const Content = () => {
                 <div className="explore-container">
                         <FaAngleLeft className="angle angle-left before-icon"/>
                     <div className="img-box">
-                        <img src="../../images/Explore/sixth hotel/view1.jpeg" alt="" />
-                        <img src="../../images/Explore/sixth hotel/view2.jpeg" alt="" />
-                        <img src="../../images/Explore/sixth hotel/view3.jpeg" alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/sixth hotel/view1.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/sixth hotel/view2.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/sixth hotel/view3.jpeg`} alt="" />
                     </div>
                         <FaAngleRight className="angle angle-right after-icon" />
                     <p className="review"><b>9.2/10</b> Exceptional (25 reviews)</p>
@@ -360,9 +360,9 @@ const Content = () => {
                 <div className="explore-container">
                         <FaAngleLeft className="angle angle-left before-icon"/>
                     <div className="img-box">
-                        <img src="../../images/Explore/seventh hotel/view1.jpeg" alt="" />
-                        <img src="../../images/Explore/seventh hotel/view2.jpeg" alt="" />
-                        <img src="../../images/Explore/seventh hotel/view3.jpeg" alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/seventh hotel/view1.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/seventh hotel/view2.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/seventh hotel/view3.jpeg`} alt="" />
                     </div>
                         <FaAngleRight className="angle angle-right after-icon" />
                     <p className="review"><b>9.3/10</b> Exceptional (32 reviews)</p>
@@ -373,9 +373,9 @@ const Content = () => {
                 <div className="explore-container">
                         <FaAngleLeft className="angle angle-left before-icon"/>
                     <div className="img-box">
-                        <img src="../../images/Explore/eight hotel/view1.jpeg" alt="" />
-                        <img src="../../images/Explore/eight hotel/view2.jpeg" alt="" />
-                        <img src="../../images/Explore/eight hotel/view3.jpeg" alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/eight hotel/view1.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/eight hotel/view2.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/eight hotel/view3.jpeg`} alt="" />
                     </div>
                         <FaAngleRight className="angle angle-right after-icon" />
                     <p className="review"><b>9.5/10</b> Exceptional (87 reviews)</p>
@@ -386,9 +386,9 @@ const Content = () => {
                 <div className="explore-container">
                         <FaAngleLeft className="angle angle-left before-icon"/>
                     <div className="img-box">
-                        <img src="../../images/Explore/Twenty-four hotel/view1.jpeg" alt="" />
-                        <img src="../../images/Explore/ninth hotel/view2.jpeg" alt="" />
-                        <img src="../../images/Explore/ninth hotel/view3.jpeg" alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/Twenty-four hotel/view1.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/ninth hotel/view2.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/ninth hotel/view3.jpeg`} alt="" />
                     </div>
                         <FaAngleRight className="angle angle-right after-icon" />
                     <p className="review"><b>9.7/10</b> Exceptional (65 reviews)</p>
@@ -399,9 +399,9 @@ const Content = () => {
                 <div className="explore-container">
                         <FaAngleLeft className="angle angle-left before-icon"/>
                     <div className="img-box">
-                        <img src="../../images/Explore/tenth hotel/view1.jpeg" alt="" />
-                        <img src="../../images/Explore/tenth hotel/view2.jpeg" alt="" />
-                        <img src="../../images/Explore/tenth hotel/view3.jpeg" alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/tenth hotel/view1.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/tenth hotel/view2.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/tenth hotel/view3.jpeg`} alt="" />
                     </div>
                         <FaAngleRight className="angle angle-right after-icon" />
                     <p className="review"><b>10.0/10</b> Exceptional (21 reviews)</p>
@@ -412,9 +412,9 @@ const Content = () => {
                 <div className="explore-container">
                         <FaAngleLeft className="angle angle-left before-icon"/>
                     <div className="img-box">
-                        <img src="../../images/Explore/eleventh hotel/view1.jpeg" alt="" />
-                        <img src="../../images/Explore/eleventh hotel/view2.jpeg" alt="" />
-                        <img src="../../images/Explore/eleventh hotel/view3.jpeg" alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/eleventh hotel/view1.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/eleventh hotel/view2.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/eleventh hotel/view3.jpeg`} alt="" />
                     </div>
                         <FaAngleRight className="angle angle-right after-icon" />
                     <p className="review"><b>9.8/10</b> Exceptional (81 reviews)</p>
@@ -425,9 +425,9 @@ const Content = () => {
                 <div className="explore-container">
                         <FaAngleLeft className="angle angle-left before-icon"/>
                     <div className="img-box">
-                        <img src="../../images/Explore/twelth hotel/view1.jpeg" alt="" />
-                        <img src="../../images/Explore/twelth hotel/view2.jpeg" alt="" />
-                        <img src="../../images/Explore/twelth hotel/view3.jpeg" alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/twelth hotel/view1.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/twelth hotel/view2.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/twelth hotel/view3.jpeg`} alt="" />
                     </div>
                         <FaAngleRight className="angle angle-right after-icon" />
                     <p className="review"><b>9.5/10</b> Exceptional (127 reviews)</p>
@@ -438,9 +438,9 @@ const Content = () => {
                 <div className="explore-container">
                         <FaAngleLeft className="angle angle-left before-icon"/>
                     <div className="img-box">
-                        <img src="../../images/Explore/thirteenth hotel/view1.jpeg" alt="" />
-                        <img src="../../images/Explore/thirteenth hotel/view2.jpeg" alt="" />
-                        <img src="../../images/Explore/thirteenth hotel/view3.jpeg" alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/thirteenth hotel/view1.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/thirteenth hotel/view2.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/thirteenth hotel/view3.jpeg`} alt="" />
                     </div>
                         <FaAngleRight className="angle angle-right after-icon" />
                     <p className="review"><b>9.6/10</b> Exceptional (157 reviews)</p>
@@ -451,9 +451,9 @@ const Content = () => {
                 <div className="explore-container">
                         <FaAngleLeft className="angle angle-left before-icon"/>
                     <div className="img-box">
-                        <img src="../../images/Explore/Forteenth hotel/view1.jpeg" alt="" />
-                        <img src="../../images/Explore/Forteenth hotel/view2.jpeg" alt="" />
-                        <img src="../../images/Explore/Forteenth hotel/view3.jpeg" alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/Forteenth hotel/view1.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/Forteenth hotel/view2.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/Forteenth hotel/view3.jpeg`} alt="" />
                     </div>
                         <FaAngleRight className="angle angle-right after-icon" />
                     <p className="review"><b>9.8/10</b> Exceptional (397 reviews)</p>
@@ -464,9 +464,9 @@ const Content = () => {
                 <div className="explore-container">
                         <FaAngleLeft className="angle angle-left before-icon"/>
                     <div className="img-box">
-                        <img src="../../images/Explore/Fifteenth hotel/view1.jpeg" alt="" />
-                        <img src="../../images/Explore/Fifteenth hotel/view2.jpeg" alt="" />
-                        <img src="../../images/Explore/Fifteenth hotel/view3.jpeg" alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/Fifteenth hotel/view1.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/Fifteenth hotel/view2.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/Fifteenth hotel/view3.jpeg`} alt="" />
                     </div>
                         <FaAngleRight className="angle angle-right after-icon" />
                     <p className="review"><b>9.7/10</b> Exceptional (91 reviews)</p>
@@ -477,9 +477,9 @@ const Content = () => {
                 <div className="explore-container">
                         <FaAngleLeft className="angle angle-left before-icon"/>
                     <div className="img-box">
-                        <img src="../../images/Explore/sixteenth hotel/view1.jpeg" alt="" />
-                        <img src="../../images/Explore/sixteenth hotel/view2.jpeg" alt="" />
-                        <img src="../../images/Explore/sixteenth hotel/view3.jpeg" alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/sixteenth hotel/view1.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/sixteenth hotel/view2.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/sixteenth hotel/view3.jpeg`} alt="" />
                     </div>
                         <FaAngleRight className="angle angle-right after-icon" />
                     <p className="review"><b>9.9/10</b> Exceptional (209 reviews)</p>
@@ -490,9 +490,9 @@ const Content = () => {
                 <div className="explore-container">
                         <FaAngleLeft className="angle angle-left before-icon"/>
                     <div className="img-box">
-                        <img src="../../images/Explore/seventeenth hotel/view1.jpeg" alt="" />
-                        <img src="../../images/Explore/seventeenth hotel/view2.jpeg" alt="" />
-                        <img src="../../images/Explore/seventeenth hotel/view3.jpeg" alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/seventeenth hotel/view1.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/seventeenth hotel/view2.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/seventeenth hotel/view3.jpeg`} alt="" />
                     </div>
                         <FaAngleRight className="angle angle-right after-icon" />
                     <p className="review"><b>9.2/10</b> Exceptional (19 reviews)</p>
@@ -503,9 +503,9 @@ const Content = () => {
                 <div className="explore-container">
                         <FaAngleLeft className="angle angle-left before-icon"/>
                     <div className="img-box">
-                        <img src="../../images/Explore/Twenty-three hotel/view1.jpeg" alt="" />
-                        <img src="../../images/Explore/Twenty-three hotel/view2.jpeg" alt="" />
-                        <img src="../../images/Explore/Twenty-three hotel/view3.jpeg" alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/Twenty-three hotel/view1.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/Twenty-three hotel/view2.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/Twenty-three hotel/view3.jpeg`} alt="" />
                     </div>
                         <FaAngleRight className="angle angle-right after-icon" />
                     <p className="review"><b>9.7/10</b> Exceptional (109 reviews)</p>
@@ -516,9 +516,9 @@ const Content = () => {
                 <div className="explore-container">
                         <FaAngleLeft className="angle angle-left before-icon"/>
                     <div className="img-box">
-                        <img src="../../images/Explore/eighteenth hotel/view1.jpeg" alt="" />
-                        <img src="../../images/Explore/eighteenth hotel/view2.jpeg" alt="" />
-                        <img src="../../images/Explore/eighteenth hotel/view3.jpeg" alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/eighteenth hotel/view1.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/eighteenth hotel/view2.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/eighteenth hotel/view3.jpeg`} alt="" />
                     </div>
                         <FaAngleRight className="angle angle-right after-icon" />
                     <p className="review"><b>10.0/10</b> Exceptional (224 reviews)</p>
@@ -529,9 +529,9 @@ const Content = () => {
                 <div className="explore-container">
                         <FaAngleLeft className="angle angle-left before-icon"/>
                     <div className="img-box">
-                        <img src="../../images/Explore/ninteenth hotel/view1.jpeg" alt="" />
-                        <img src="../../images/Explore/ninteenth hotel/view2.jpeg" alt="" />
-                        <img src="../../images/Explore/ninteenth hotel/view3.jpeg" alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/ninteenth hotel/view1.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/ninteenth hotel/view2.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/ninteenth hotel/view3.jpeg`} alt="" />
                     </div>
                         <FaAngleRight className="angle angle-right after-icon" />
                     <p className="review"><b>9.5/10</b> Exceptional (173 reviews)</p>
@@ -542,9 +542,9 @@ const Content = () => {
                 <div className="explore-container">
                         <FaAngleLeft className="angle angle-left before-icon"/>
                     <div className="img-box">
-                        <img src="../../images/Explore/twentieth hotel/view1.jpeg" alt="" />
-                        <img src="../../images/Explore/twentieth hotel/view2.jpeg" alt="" />
-                        <img src="../../images/Explore/twentieth hotel/view3.jpeg" alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/twentieth hotel/view1.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/twentieth hotel/view2.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/twentieth hotel/view3.jpeg`} alt="" />
                     </div>
                         <FaAngleRight className="angle angle-right after-icon" />
                     <p className="review"><b>9.0/10</b> Wonderful (99 reviews)</p>
@@ -555,9 +555,9 @@ const Content = () => {
                 <div className="explore-container">
                         <FaAngleLeft className="angle angle-left before-icon"/>
                     <div className="img-box">
-                        <img src="../../images/Explore/Twenty-one hotel/view1.jpeg" alt="" />
-                        <img src="../../images/Explore/Twenty-one hotel/view2.jpeg" alt="" />
-                        <img src="../../images/Explore/Twenty-four hotel/view3.jpeg" alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/Twenty-one hotel/view1.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/Twenty-one hotel/view2.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/Twenty-four hotel/view3.jpeg`} alt="" />
                     </div>
                         <FaAngleRight className="angle angle-right after-icon" />
                     <p className="review"><b>8.7/10</b> Exceptional (199 reviews)</p>
@@ -568,9 +568,9 @@ const Content = () => {
                 <div className="explore-container">
                         <FaAngleLeft className="angle angle-left before-icon"/>
                     <div className="img-box">
-                        <img src="../../images/Explore/Twenty-two hotel/view1.jpeg" alt="" />
-                        <img src="../../images/Explore/Twenty-two hotel/view2.jpeg" alt="" />
-                        <img src="../../images/Explore/Twenty-two hotel/view3.jpeg" alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/Twenty-two hotel/view1.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/Twenty-two hotel/view2.jpeg`} alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/Explore/Twenty-two hotel/view3.jpeg`} alt="" />
                     </div>
                         <FaAngleRight className="angle angle-right after-icon" />
                     <p className="review"><b>10.0/10</b> Wonderful (251 reviews)</p>

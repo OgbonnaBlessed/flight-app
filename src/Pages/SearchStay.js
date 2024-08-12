@@ -43,10 +43,10 @@ const SearchStay = () => {
 
     const [activeIndex, setActiveIndex] = useState(0);
     const images = [
-      '../../images/search/view1.jpeg',
-      '../../images/search/view2.jpeg',
-      '../../images/search/view3.jpeg',
-      '../../images/search/view4.jpeg',
+      `${process.env.PUBLIC_URL}/images/search/view1.jpeg`,
+      `${process.env.PUBLIC_URL}/images/search/view2.jpeg`,
+      `${process.env.PUBLIC_URL}/images/search/view3.jpeg`,
+      `${process.env.PUBLIC_URL}/images/search/view4.jpeg`,
     ];
 
     useEffect(() => {
