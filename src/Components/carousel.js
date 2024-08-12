@@ -3,12 +3,14 @@ import React, { useState, useEffect } from 'react';
 const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const images = [
-    '../../images/carousel/view1.jpeg',
-    '../../images/carousel/view2.jpeg',
-    '../../images/carousel/view3.jpeg',
-    '../../images/carousel/view4.jpeg',
-    '../../images/carousel/view5.jpeg',
+    `${process.env.PUBLIC_URL}/images/carousel/view1.jpeg`,
+    `${process.env.PUBLIC_URL}/images/carousel/view2.jpeg`,
+    `${process.env.PUBLIC_URL}/images/carousel/view3.jpeg`,
+    `${process.env.PUBLIC_URL}/images/carousel/view4.jpeg`,
+    `${process.env.PUBLIC_URL}/images/carousel/view5.jpeg`,
   ];
+
+  {${process.env.PUBLIC_URL}/images/plane.jpg} 
 
   useEffect(() => {
     const interval = setInterval(() => {
