@@ -2,10 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import { HashRouter as Router,
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom"
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import { AuthProvider } from './AuthContext';
 import Things from './Pages/Things';
 import Packages from './Pages/Packages';
@@ -18,60 +15,23 @@ import Favorites from './Pages/Favorites';
 import Trips from './Pages/Trips';
 import SearchStay from './Pages/SearchStay';
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-  },
-  {
-    path: "/stays",
-    element: <Stays />,
-  },
-  {
-    path: "/flights/round",
-    element: <RoundTrip />,
-  },
-  {
-    path: "/packages",
-    element: <Packages />,
-  },
-  {
-    path: "/things",
-    element: <Things />,
-  },
-  {
-    path: "/flights/multi",
-    element: <MultiCity />
-  },
-  {
-    path: "/flights/oneway",
-    element: <OneWay />
-  },
-  {
-    path: "/flights/round",
-    element: <RoundTrip />
-  },
-  {
-    path: "/search",
-    element: <Search />
-  },
-  {
-    path: "/favorites",
-    element: <Favorites />
-  },
-  {
-    path: "/trips",
-    element: <Trips />
-  },
-  {
-    path: "/search-stays",
-    element: <SearchStay />
-  }
-])
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <AuthProvider>
-    <RouterProvider router={router} />
+    <Router>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/stays" element={<Stays />} />
+        <Route path="/flights/round" element={<RoundTrip />} />
+        <Route path="/packages" element={<Packages />} />
+        <Route path="/things" element={<Things />} />
+        <Route path="/flights/multi" element={<MultiCity />} />
+        <Route path="/flights/oneway" element={<OneWay />} />
+        <Route path="/search" element={<Search />} />
+        <Route path="/favorites" element={<Favorites />} />
+        <Route path="/trips" element={<Trips />} />
+        <Route path="/search-stays" element={<SearchStay />} />
+      </Routes>
+    </Router>
   </AuthProvider>
 );
