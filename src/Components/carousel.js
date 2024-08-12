@@ -10,8 +10,6 @@ const Carousel = () => {
     `${process.env.PUBLIC_URL}/images/carousel/view5.jpeg`,
   ];
 
-  {${process.env.PUBLIC_URL}/images/plane.jpg} 
-
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
