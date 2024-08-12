@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/flight-app/static/css/main.cde98ebd.css",
+    "main.js": "/flight-app/static/js/main.ee1683df.js",
+    "index.html": "/flight-app/index.html",
+    "main.cde98ebd.css.map": "/flight-app/static/css/main.cde98ebd.css.map",
+    "main.ee1683df.js.map": "/flight-app/static/js/main.ee1683df.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cde98ebd.css",
+    "static/js/main.ee1683df.js"
+  ]
+}
