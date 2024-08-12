@@ -182,11 +182,11 @@ const Content = () => {
                  <h3>Hot tub</h3>
                 </div>
                 <div className="stay-container">
-                    <img src={`${process.env.PUBLIC_URL}/images/stay/ocean view.jpeg`} alt="" />                  
+                    <img src={`${process.env.PUBLIC_URL}/images/stay/ocean view.jpg`} alt="" />                  
                     <h3>Ocean view</h3>
                 </div>
                 <div className="stay-container">
-                    <img src={`${process.env.PUBLIC_URL}/images/stay/pool.jpeg`} alt="" />
+                    <img src={`${process.env.PUBLIC_URL}/images/stay/pool.jpg`} alt="" />
                   <h3>Pool</h3>
                 </div>
                 <div className="stay-container">
@@ -194,11 +194,11 @@ const Content = () => {
                  <h3>Castle</h3>
                 </div>
                 <div className="stay-container">
-                    <img src={`${process.env.PUBLIC_URL}/images/stay/water park.jpeg`} alt="" />                    
+                    <img src={`${process.env.PUBLIC_URL}/images/stay/water park.jpg`} alt="" />                    
                     <h3>Water park</h3>
                 </div>
                 <div className="stay-container">
-                    <img src={`${process.env.PUBLIC_URL}/images/stay/House boat.jpeg`} alt="" />                    
+                    <img src={`${process.env.PUBLIC_URL}/images/stay/House boat.jpg`} alt="" />                    
                     <h3>House boat</h3>
                 </div>
                 <div className="stay-container">
