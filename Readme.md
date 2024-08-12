@@ -99,19 +99,19 @@ Optionally, you can also have a code editor like [Visual Studio Code](https://co
 
 ### Building the App
 
-To create an optimized production build of the application, run:
+1. *To create an optimized build for the application, run:*
 
-    ```bash
-    npm run build
-    ```
+   ```bash
+   npm run build
+   ```
 
 ## Deployment
 
-To deploy the application to GitHub Pages, use the following command:
+1. *To deploy the application to GitHub Pages, use the following command:*
 
-    ```bash
-    npm run deploy
-    ```
+   ```bash
+   npm run deploy
+   ```
 
 ## Project structure
 
