@@ -88,7 +88,7 @@ Optionally, you can also have a code editor like [Visual Studio Code](https://co
 
 1. *Start the development server:*
 
-   ``bash
+   ```bash
    npm start
    ```
    
@@ -101,17 +101,17 @@ Optionally, you can also have a code editor like [Visual Studio Code](https://co
 
 To create an optimized production build of the application, run:
 
-```bash
-npm run build
-```
+    ```bash
+    npm run build
+    ```
 
 ## Deployment
 
 To deploy the application to GitHub Pages, use the following command:
 
-```bash
-npm run deploy
-```
+    ```bash
+    npm run deploy
+    ```
 
 ## Project structure
 
@@ -142,31 +142,31 @@ Contributions are welcome! If you'd like to contribute, please follow these step
 
 2. **Clone your fork:**
 
-```bash
-git clone https://github.com/your-username/flight-app.git
-```
+    ```bash
+    git clone https://github.com/your-username/flight-app.git
+    ```
    
 
 3. **Create a new branch for your feature or bugfix:**
 
-```bash
-git checkout -b feature/your-feature-name
-```
-   
+    ```bash
+    git checkout -b feature/your-feature-name
+    ```
+    
 
 4. **Make your changes and commit them:**
 
-   ```bash
-   git add .
-   git commit -m "Description of the changes made"
-   ```
+    ```bash
+    git add .
+    git commit -m "Description of the changes made"
+    ```
    
 
 5. **Push to your forked repository:**
 
-```bash
-git push origin feature/your-feature-name
-```
+    ```bash
+    git push origin feature/your-feature-name
+    ```
 
 6. *Submit a pull request:*
    - Go to the original repository on GitHub, click on "Pull Requests," and submit your request for review.
