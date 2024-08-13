@@ -115,25 +115,8 @@ Optionally, you can also have a code editor like [Visual Studio Code](https://co
 
 ## Project structure
 
-Here's an overview of the project structure.
-
-flight-app/
-│
-├── public/
-│   ├── index.html  # The main HTML file
-│   └── images       # The images folder
-│         
-├── src/
-│   ├── components/ # Reusable components
-│   ├── pages/      # Different pages of the app
-│   ├── App.js      # Main app component
-│   ├── AuthContext.js    # The auth context
-│   ├── Firebase.js  # The firebase file
-│   ├── Index.css   # Containing all the styling for the app.
-|   └── Index.js   # The entry point for the app.
-|
-├── package.json    # Project metadata and dependencies
-└── README.md       # This file
+![Here's an overview of the project structure.]
+(public/images/Readme/view1.png)
 
 ## Contributions
 
