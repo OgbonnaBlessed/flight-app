@@ -3,7 +3,7 @@ import Content from "../Components/Content";
 import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
-import { MdArrowDropDown, MdSwapHoriz } from "react-icons/md";
+import { MdArrowDropDown } from "react-icons/md";
 import React, { useState, useEffect, useRef } from "react";
 import { locations } from "../Components/Locations";
 import { DateRangePicker } from "react-date-range";
@@ -160,7 +160,7 @@ const MultiCity = () => {
     const [flights, setFlights] = useState([{ id: 1 }, { id: 2 }]);
     const [date, setDate] = useState(Array(flights.length).fill({
       startDate: new Date(),
-      endDate: new Date(),
+      endDate: new Date(new Date().setDate(new Date().getDate() + 2)),
       key: 'selection',
     }));
 

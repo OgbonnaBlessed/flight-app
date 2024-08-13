@@ -4,7 +4,7 @@ import Content from "../Components/Content";
 import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
-import { MdArrowDropDown, MdSwapHoriz } from "react-icons/md";
+import { MdArrowDropDown } from "react-icons/md";
 import { locations } from "../Components/Locations";
 import { DateRangePicker } from "react-date-range";
 import "react-date-range/dist/styles.css"; // Main CSS file
@@ -43,7 +43,7 @@ const Packages = () => {
 
     const [date, setDate] = useState({
         startDate: new Date(),
-        endDate: new Date(),
+        endDate: new Date(new Date().setDate(new Date().getDate() + 2)),
         key: 'selection',
     });
 
@@ -54,7 +54,7 @@ const Packages = () => {
 
     const handleChange = (ranges) => {
         setDate(ranges.selection);
-        setDepartureDate(format(ranges.selection.startDate, 'MMM dd, yyyy'));
+        setDepartureDate(`${format(ranges.selection.startDate, 'MMM, dd')} - ${format(ranges.selection.endDate, 'MMM, dd')}`);
     };
 
     useEffect(() => {
@@ -143,11 +143,13 @@ const Packages = () => {
     }, [location.state]);
 
     const handleSubmit = (e) => {
+        
         e.preventDefault();
+        
         const newSearch = {
             origin,
             destination,
-            departureDate,
+            departureDate: `${format(date.startDate, 'MMM, dd')} - ${format(date.endDate, 'MMM, dd')}`,
             travelers,
             flightType: selectedFlightType,
             staySelected,
@@ -170,17 +172,17 @@ const Packages = () => {
         }
     };
   
-    const getSelectedPackagesText = () => {
-        if (staySelected && flightSelected) {
-            return '+ Flight + Stay';
-        } else if (staySelected) {
-            return '+ Stay';
-        } else if (flightSelected) {
-            return '+ Flight';
-        } else {
-            return '';
-        }
-    };
+    // const getSelectedPackagesText = () => {
+    //     if (staySelected && flightSelected) {
+    //         return '+ Flight + Stay';
+    //     } else if (staySelected) {
+    //         return '+ Stay';
+    //     } else if (flightSelected) {
+    //         return '+ Flight';
+    //     } else {
+    //         return '';
+    //     }
+    // };
     
   return (
            <>
@@ -280,18 +282,27 @@ const Packages = () => {
                            <div className="input-container" ref={dateRef}>
                                <FaRegCalendarAlt size={18} />
                                <input
-                                   value={`${format(date.startDate, 'MMM, dd')} - ${format(date.endDate, 'MMM, dd')}`}
+                                   value={departureDate ? departureDate : `${format(date.startDate, 'MMM, dd')} - ${format(date.endDate, 'MMM, dd')}`}
                                    onChange={(e) => setDepartureDate(e.target.value)}
                                    required
                                    onFocus={handleDateRange}
                                />
                                <label htmlFor="departure-date" className="placeholder">Date</label>
-                               {openDate && <DateRangePicker
-                                   className="date-range"
-                                   ranges={[date]}
-                                   onChange={handleChange}
-                                   minDate={new Date()}
-                               />}
+                               {openDate && 
+                                <div className="date-range-picker-container">
+                                    <DateRangePicker
+                                        className="date-range"
+                                        ranges={[date]}
+                                        onChange={handleChange}
+                                        minDate={new Date()}
+                                        staticRanges={[]}
+                                        inputRanges={[]}
+                                        calendarFocus="forwards"
+                                        // direction="horizontal"
+                                        preventSnapRefocus={true}
+
+                                    />
+                                </div>}
                            </div>
                            <div className="input-container">
                                <FaUserAlt size={18} />

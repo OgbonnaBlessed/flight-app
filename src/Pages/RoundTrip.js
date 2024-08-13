@@ -3,7 +3,7 @@ import Content from "../Components/Content";
 import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
-import { MdSwapHoriz, MdArrowDropDown } from "react-icons/md";
+import { MdArrowDropDown } from "react-icons/md";
 import { useState, useRef, useEffect } from "react";
 import { locations } from "../Components/Locations";
 import { DateRangePicker } from "react-date-range";
@@ -32,7 +32,7 @@ const RoundTrip = () => {
 
     const [date, setDate] = useState({
                                         startDate: new Date(),
-                                        endDate: new Date(),
+                                        endDate: new Date(new Date().setDate(new Date().getDate() + 2)),
                                         key: 'selection',
                                     });
 
@@ -43,7 +43,7 @@ const RoundTrip = () => {
 
     const handleChange = (ranges) => {
         setDate(ranges.selection);
-        setDepartureDate(format(ranges.selection.startDate, 'MMM dd, yyyy'));
+        setDepartureDate(`${format(ranges.selection.startDate, 'MMM, dd')} - ${format(ranges.selection.endDate, 'MMM, dd')}`);
     };
 
     useEffect(() => {
@@ -132,21 +132,23 @@ const RoundTrip = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         // Save the search to localStorage
-        const newSearch = {
-            origin,
-            destination,
-            departureDate,
-            travelers,
-            flightType: selectedFlightType,
-            source: 'RoundTrip',
-        };
-        const recentSearches = JSON.parse(localStorage.getItem('recentSearches')) || [];
-        localStorage.setItem('recentSearches', JSON.stringify([newSearch, ...recentSearches]));
-        
-        // Navigate to Search Results
-        navigate('/search', {
-            state: newSearch,
-        });
+
+            const newSearch = {
+                origin,
+                destination,
+                departureDate: `${format(date.startDate, 'MMM, dd')} - ${format(date.endDate, 'MMM, dd')}`,
+                travelers,
+                flightType: selectedFlightType,
+                source: 'RoundTrip',
+            };
+            const recentSearches = JSON.parse(localStorage.getItem('recentSearches')) || [];
+            localStorage.setItem('recentSearches', JSON.stringify([newSearch, ...recentSearches]));
+            
+            // Navigate to Search Results
+            navigate('/search', {
+                state: newSearch,
+            });
+
     };
 
   return (
@@ -247,19 +249,25 @@ const RoundTrip = () => {
                     <div className="input-container" ref={dateRef}>
                         <FaRegCalendarAlt size={18} />
                         <input
-                            value={`${format(date.startDate, 'MMM, dd')} - ${format(date.endDate, 'MMM, dd')}`}
+                            value={departureDate ? departureDate : `${format(date.startDate, 'MMM, dd')} - ${format(date.endDate, 'MMM, dd')}`}
                             onChange={(e) => setDepartureDate(e.target.value)}
                             onFocus={handleDateRange}
                             required
                         />
                         <label htmlFor="departure-date" className="placeholder">Date</label>
-                        {openDate && <DateRangePicker
-                            className="date-range"
-                            ranges={[date]}
-                            onChange={handleChange}
-                            minDate={new Date()}
-                            required
-                        />}
+                        {openDate && 
+                            <div className="date-range-picker-container">
+                                <DateRangePicker
+                                    className="date-range"
+                                    ranges={[date]}
+                                    onChange={handleChange}
+                                    minDate={new Date()}
+                                    staticRanges={[]}
+                                    inputRanges={[]}
+                                    calendarFocus="forwards"
+                                    preventSnapRefocus={true}
+                                />
+                            </div>}
                     </div>
                     <div className="input-container travel-sm-container">
                         <FaUserAlt size={18} />

@@ -6,6 +6,8 @@ import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import { locations } from "../Components/Locations";
 import { DateRangePicker } from "react-date-range";
+import 'react-date-range/dist/styles.css'; // main style file
+import 'react-date-range/dist/theme/default.css'; // theme css file
 import format from "date-fns/format";
 
 const Things = () => {
@@ -21,7 +23,7 @@ const Things = () => {
 
         const [date, setDate] = useState({
                                             startDate: new Date(),
-                                            endDate: new Date(),
+                                            endDate: new Date(new Date().setDate(new Date().getDate() + 2)),
                                             key: 'selection',
                                         });
                                 
@@ -91,7 +93,7 @@ const Things = () => {
         // Save the search to localStorage
         const newSearch = {
             destination,
-            departureDate,
+            departureDate: `${format(date.startDate, 'MMM, dd')} - ${format(date.endDate, 'MMM, dd')}`,
             travelers,
             source: 'Things',
         };
@@ -146,18 +148,26 @@ const Things = () => {
                     <div className="input-container" ref={dateRef}>
                         <FaRegCalendarAlt size={18} />
                         <input
-                            value={`${format(date.startDate, 'MMM, dd')} - ${format(date.endDate, 'MMM, dd')}`}
+                            value={departureDate ? departureDate : `${format(date.startDate, 'MMM, dd')} - ${format(date.endDate, 'MMM, dd')}`}
                             onChange={(e) => setDepartureDate(e.target.value)}
                             required
                             onFocus={handleDateRange}
                         />
                         <label htmlFor="departure-date" className="placeholder">Date</label>
-                        {openDate && <DateRangePicker
-                            className="date-range"
-                            ranges={[date]}
-                            onChange={handleChange}
-                            minDate={new Date()}
-                        />}
+                        {openDate && 
+                            <div className="date-range-picker-container">
+                                <DateRangePicker
+                                    className="date-range"
+                                    ranges={[date]}
+                                    onChange={handleChange}
+                                    minDate={new Date()}
+                                    staticRanges={[]}
+                                    inputRanges={[]}
+                                    calendarFocus="forwards"
+                                    // direction="horizontal"
+                                    preventSnapRefocus={true}
+                                />
+                        </div>}
                     </div>
                     <div className="input-container">
                         <FaUserAlt size={18} />
