@@ -121,17 +121,19 @@ flight-app/
 │
 ├── public/
 │   ├── index.html  # The main HTML file
-│   └── ...         # Other public assets
-│
+│   └── images       # The images folder
+│         
 ├── src/
 │   ├── components/ # Reusable components
 │   ├── pages/      # Different pages of the app
 │   ├── App.js      # Main app component
-│   ├── index.js    # Entry point of the app
-│   └── ...         # Other source files
-│
+│   ├── AuthContext.js    # The auth context
+│   ├── Firebase.js  # The firebase file
+│   ├── Index.css   # Containing all the styling for the app.
+|   └── Index.js   # The entry point for the app.
+|
 ├── package.json    # Project metadata and dependencies
-├── README.md       # This file
+└── README.md       # This file
 
 ## Contributions
 

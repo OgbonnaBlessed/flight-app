@@ -249,8 +249,8 @@ const RoundTrip = () => {
                         <input
                             value={`${format(date.startDate, 'MMM, dd')} - ${format(date.endDate, 'MMM, dd')}`}
                             onChange={(e) => setDepartureDate(e.target.value)}
-                            required
                             onFocus={handleDateRange}
+                            required
                         />
                         <label htmlFor="departure-date" className="placeholder">Date</label>
                         {openDate && <DateRangePicker
@@ -258,6 +258,7 @@ const RoundTrip = () => {
                             ranges={[date]}
                             onChange={handleChange}
                             minDate={new Date()}
+                            required
                         />}
                     </div>
                     <div className="input-container travel-sm-container">
