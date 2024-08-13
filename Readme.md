@@ -115,8 +115,7 @@ Optionally, you can also have a code editor like [Visual Studio Code](https://co
 
 ## Project structure
 
-![Here's an overview of the project structure.]
-(public/images/Readme/view1.png)
+![Here's an overview of the project structure.](public/images/Readme/view1.png)
 
 ## Contributions
 
