@@ -4,7 +4,7 @@ import { getAuth, GoogleAuthProvider, signInWithPopup, signOut } from 'firebase/
 
 const firebaseConfig = {
   apiKey: "AIzaSyCt0DbLXwI7trkAH4bTna9ZvaK0FmjhmZw",
-  authDomain: "https://ogbonnablessed.github.io/flight-app/",
+  authDomain: "my-project-2efd8.firebaseapp.com",
   projectId: "my-project-2efd8",
   storageBucket: "my-project-2efd8.appspot.com",
   messagingSenderId: "486608547275",
